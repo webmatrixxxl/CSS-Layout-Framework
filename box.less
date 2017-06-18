@@ -1,0 +1,111 @@
+.box {
+  width: 100%;
+  display: block;
+
+  &--full {
+    width: 100%;
+    height: 100%;
+
+    &-w {
+      width: 100%;
+    }
+    &-h {
+      height: 100%;
+    }
+  }
+  &--flex {
+    display: flex;
+
+    &--column {
+      flex-flow: column;
+      display: flex;
+
+      &--wrap {
+        flex-flow: column wrap;
+        display: flex;
+      }
+    }
+    &--row {
+      flex-flow: row;
+      display: flex;
+
+      &--wrap {
+        flex-flow: row wrap;
+        display: flex;
+      }
+    }
+    &--inline {
+      display: inline-flex;
+      width: auto;
+    }
+  }
+  &--inline {
+    display: inline;
+  }
+}
+
+.pos {
+  &--text {
+    &-left {
+      text-align: left;
+    &-center {
+     text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+  &--margin {
+    &-x {
+      margin: 0 auto;
+    }
+    &-y {
+      margin: auto 0;
+    }
+    &-xy {
+      margin: auto;
+    }
+  }
+  &--self {
+    &-start {
+      align-self: flex-start;
+    }
+    &-end {
+      align-self: flex-end;
+    }
+    &-center {
+      align-self: center;
+    }
+    &-stretch {
+      align-self: stretch;
+    }
+  }
+  &--y {
+    align-items: center;
+  }
+  &--Yyy {
+    align-items: flex-start;
+  }
+  &--yyY {
+    align-items: flex-end;
+  }
+  &--x {
+    justify-content: center;
+  }
+  &--Xxx {
+    justify-content: flex-start;
+  }
+  &--xxX {
+    justify-content: flex-end;
+  }
+  &--XxX {
+    justify-content: space-between;
+  }
+  &--xXx {
+    justify-content: space-around;
+  }
+  &--xy {
+    justify-content: center;
+    align-items: center;
+  }
+}
