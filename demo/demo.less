@@ -1,0 +1,45 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+
+  .panel {
+    > div {
+      &:not(.panel) {
+        background-color: #B2EBF2;
+      }
+      color: #1F2D3D;
+      padding: 20px;
+      border-radius: 3px;
+
+    }
+
+    &--margin {
+      > div + div {
+        margin-top: 40px;
+      }
+    }
+  }
+  
+}
+
+[class*="box--pos--y"] {
+  min-height: 200px;
+}
+// [class*="box--flex--row"] {
+//   > div {
+//     width: 100%;
+//   }
+// }
+[class*="box--flex--row--wrap"] {
+  > div {
+    width: 100%;
+  }
+}
+[class*="box--flex--column--wrap"] {
+  height: 200px;
+
+  > div {
+    height: 200px;
+  }
+}
+
+

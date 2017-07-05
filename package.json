@@ -1,0 +1,28 @@
+{
+  "name": "CSS-Layout-Framework",
+  "description": "css-layout-framework",
+  "version": "0.0.1",
+  "maintainers": [
+    {
+      "name": "Kiril Daskalov",
+      "email": "webmatrixxxl@gmail.com",
+      "web": ""
+    }
+  ],
+  "scripts": {
+      "server": "http-server  -a localhost -p 8000 -c-1 -o"
+  },
+  "demos": [
+    "/demo"
+  ],
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "less": "^2.7.2"
+  },
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ]
+}

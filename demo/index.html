@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS-Layout-Framework</title>
+	<link rel="stylesheet/less" type="text/css" href="demo.less"></link>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+
+	<link rel="stylesheet/less" type="text/css" href="../box.less"></link>
+	<script type="text/javascript" src="../node_modules/less/dist/less.min.js"></script>
+	<script>less.watch();</script>
+</head>
+<body>
+	<div class="panel panel--margin">
+		<div class="box--flex">
+			<div>box--flex</div>
+		</div>
+		<div>
+			box--flex--row
+			<div class="box--flex--row panel">
+				<div class="box--full-w">
+					row
+					<div>box--full-w</div>
+				</div>
+				<div class="box--full-w">
+					row
+					<div>box--full-w</div>
+				</div>
+				<div class="box--full-w">
+					row
+					<div>box--full-w</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			box--flex--row--wrap
+			<div class="box--flex--row--wrap panel">
+				<div class="box--pos--text-center">
+					row
+					<div>box--pos--text-center</div>
+				</div>
+				<div class="box--pos--text-center">
+					row
+					<div>box--pos--text-center</div>
+				</div>
+				<div class="box--pos--text-center">
+					row
+					<div>box--pos--text-center</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box--flex box--pos--Xxx">
+			<div>
+				justify-content: flex-start;
+				<div>box--flex box--pos--Xxx</div>
+			</div>
+		</div>
+		<div class="box--flex box--pos--x">
+			<div>
+				justify-content: center;
+				<div>box--flex box--pos--x</div>
+			</div>
+		</div>
+		<div class="box--flex box--pos--xxX">
+			<div>
+				justify-content: flex-end;
+				<div>box--flex box--pos--xxX</div>
+			</div>
+		</div>
+		<div class="panel box--flex box--pos--xXx">
+			<div>
+				justify-content: space-around;
+				<div>box--flex box--pos--xXx</div>
+			</div>
+			<div>
+				justify-content: space-around;
+				<div>box--flex box--pos--xXx</div>
+			</div>
+			<div>
+				justify-content: space-around;
+				<div>box--flex box--pos--xXx</div>
+			</div>
+		</div>
+		<div class="panel box--flex box--pos--XxX">
+			<div>
+				justify-content: space-between;
+				<div>box--flex box--pos--XxX</div>
+			</div>
+			<div>
+				justify-content: space-around;
+				<div>box--flex box--pos--XxX</div>
+			</div>
+			<div>
+				justify-content: space-around;
+				<div>box--flex box--pos--XxX</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="box--flex box--pos--XxX panel">
+		<div class="box--flex box--pos--Yyy">
+			<div>
+				align-items: flex-start;
+				<div>box--flex box--pos--xXx</div>
+			</div>
+		</div>
+		<div class="box--flex box--pos--y">
+			<div>
+				align-items: center;
+				<div>box--flex box--pos--y</div>
+			</div>
+		</div>
+		<div class="box--flex box--pos--yyY">
+			<div>
+				align-items: center;
+				<div>box--flex box--pos--yyY</div>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		box--flex--column
+		<div class="box--flex--column panel">
+			<div>
+				column
+			</div>
+			<div>
+				column
+			</div>
+			<div>
+				column
+			</div>
+		</div>
+	</div>
+
+	<div>
+		box--flex--column--wrap
+		<div class="box--flex--column--wrap panel">
+			<div>
+				column
+			</div>
+			<div>
+				column
+			</div>
+			<div>
+				column
+			</div>
+		</div>
+	</div>
+</body>
+</html>
