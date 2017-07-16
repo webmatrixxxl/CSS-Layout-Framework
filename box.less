@@ -13,6 +13,9 @@
   &--flex {
     display: flex;
 
+    &--pos {
+      .box--flex--pos;
+    }
     &--column {
       flex-flow: column;
       display: flex;
@@ -34,6 +37,7 @@
     &--inline {
       display: inline-flex;
       width: auto;
+      .box--flex--pos;
     }
   }
   &--block {
@@ -42,7 +46,7 @@
   &--inline {
     display: inline;
   }
-
+  
   &--pos {
     &--text {
       &-left {
@@ -66,47 +70,63 @@
         margin: auto;
       }
     }
-    &--self {
-      &-start {
-        align-self: flex-start;
-      }
-      &-end {
-        align-self: flex-end;
-      }
-      &-center {
-        align-self: center;
-      }
-      &-stretch {
-        align-self: stretch;
-      }
+  }
+}
+
+.box--flex--pos {
+  &--self {
+    &-start {
+      display: flex;
+      align-self: flex-start;
     }
-    &--y {
-      align-items: center;
+    &-end {
+      display: flex;
+      align-self: flex-end;
     }
-    &--Yyy {
-      align-items: flex-start;
+    &-center {
+      display: flex;
+      align-self: center;
     }
-    &--yyY {
-      align-items: flex-end;
+    &-stretch {
+      display: flex;
+      align-self: stretch;
     }
-    &--x {
-      justify-content: center;
-    }
-    &--Xxx {
-      justify-content: flex-start;
-    }
-    &--xxX {
-      justify-content: flex-end;
-    }
-    &--XxX {
-      justify-content: space-between;
-    }
-    &--xXx {
-      justify-content: space-around;
-    }
-    &--xy {
-      justify-content: center;
-      align-items: center;
-    }
+  }
+  &--y {
+    display: flex;
+    align-items: center;
+  }
+  &--Yyy {
+    display: flex;
+    align-items: flex-start;
+  }
+  &--yyY {
+    display: flex;
+    align-items: flex-end;
+  }
+  &--x {
+    display: flex;
+    justify-content: center;
+  }
+  &--Xxx {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &--xxX {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &--XxX {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--xXx {
+    display: flex;
+    justify-content: space-around;
+  }
+  &--xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
